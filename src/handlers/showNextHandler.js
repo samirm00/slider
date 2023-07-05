@@ -9,6 +9,10 @@ const showNextHandler = () => {
     if (data.counter === data.slides.length - 1) {
         dom.nextBtn.classList.add('hide');
     }
+    if (data.counter > data.slides.length - 1) {
+        data.counter = data.slides.length - 1;
+        return;
+    }
     const nextSlideData = data.slides[data.counter];
     updateSlide(nextSlideData);
 };

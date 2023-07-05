@@ -11,6 +11,11 @@ const showPreviousHandler = () => {
         dom.prevBtn.classList.add('hide');
     }
 
+    if (data.counter < 0) {
+        data.counter = 0;
+        return;
+    }
+
     const previousSlideData = data.slides[data.counter];
     updateSlide(previousSlideData);
 };
