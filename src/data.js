@@ -34,3 +34,5 @@ export const dom = {
     prevBtn: document.querySelector('.prevBtn'),
     sliders: document.querySelector('.slider-container'),
 };
+
+// testing
